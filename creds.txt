@@ -1,0 +1,3 @@
+                                        superuser credentials
+username: admin
+password: mirshod@99!

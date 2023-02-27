@@ -1,0 +1,42 @@
+{% extends "crm/home.html" %}
+
+{% block title %}Add Customer{% endblock %}
+
+{% block content %}
+<table class="table table-striped table-hover table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th class="text-center" scope="col">ID</th>
+      <th class="text-center" scope="col">Name</th>
+      <th class="text-center" scope="col">Email</th>
+      <th class="text-center" scope="col">Phone</th>
+      <th class="text-center" scope="col">Country</th>
+      <th class="text-center" scope="col">City</th>
+      <th class="text-center" scope="col">Zipcode</th>
+      <th class="text-center" scope="col">Created At</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  {% if customers %}
+    {% for customer in customers %}
+    <tr>
+            <td ><a href="{% url 'customer_record' customer.id %}" style="text-decoration: none;">{{ customer.id }}</a></td>
+			<td class="text-center">{{ customer.first_name }} {{ customer.last_name }}</td>
+			<td class="text-center">{{ customer.email }}</td>
+			<td class="text-center">{{ customer.phone }}</td>
+			<td class="text-center">{{ customer.country }}</td>
+			<td class="text-center">{{ customer.city }}</td>
+			<td class="text-center">{{ customer.zipcode }}</td>
+			<td class="text-center">{{ customer.created_at }}</td>
+    </tr>
+  {% endfor %}
+
+  {% else %}
+  <h2>There are no customers yet!....</h2>
+{% endif %}
+  </tbody>
+</table>
+
+
+{% endblock %}

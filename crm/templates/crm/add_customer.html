@@ -1,0 +1,23 @@
+{% extends "crm/home.html" %}
+
+{% block title %}Add Customer{% endblock %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+<h1>Add customer</h1>
+<br/>
+
+<form method="POST" action="{% url 'add_customer' %}">
+	{% csrf_token %}
+	{{ form.as_p }}
+
+<br/>
+  <button type="submit" class="btn btn-secondary">Add customer</button>
+   <a href="{% url 'customer_list' %}" class="btn btn-primary">Back</a>
+
+</form>
+
+</div>
+
+{% endblock %}

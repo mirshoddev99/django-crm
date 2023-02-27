@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+  <style>
+
+  .btn {
+  display: inline-block;
+  background-color: #0099ff;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background-color: #4c4c4c;
+}
+
+    .intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.intro-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #4c4c4c;
+}
+
+.intro-text span {
+  color: #0099ff;
+}
+
+.intro-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.intro-text a {
+  display: inline-block;
+  background-color: #0099ff;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.intro-text a:hover {
+  background-color: #4c4c4c;
+}
+
+
+  </style>
+<body>
+
+<div class="intro-text">
+  <h1>Welcome to <span>Django CRM Application</span></h1>
+  <p>Your one-stop solution for all your customer relationship management needs.</p>
+  <p>With our powerful CRM application built on the Django framework, managing your customer interactions has never been easier. Our user-friendly interface lets you track leads, manage deals, and keep your team organized, all in one centralized location.</p>
+  <p>Say goodbye to scattered spreadsheets and hello to streamlined workflows. Sign in now to take your customer management to the next level!</p>
+    <a href="{% url 'customer_list' %}" class="btn">View Customer List</a>
+
+</div>
+
+
+</body>
+</html>

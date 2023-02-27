@@ -1,0 +1,13 @@
+                Steps of Implementing this application
+
+1. Connecting Django with PostgresSQL database  (OK)
+2. Linking Bootstrap and creating base html page    (OK)
+3. Register     (OK)
+4. Login and Log out        (OK)
+5. Handling CustomUserMixin with dispatch method to check if user is authenticated      (OK)
+6. Creating a Customer model for recording      (OK)
+7. Adding Bootstrap table and displaying it on the home page with Customer records      (OK)
+8. Adding record        (OK)
+9. Updating record      (OK)
+10. Deleting record     (OK)
+11. Displaying a particular record of customer on a template page   (OK)

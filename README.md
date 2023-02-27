@@ -1,46 +1,53 @@
-## Django CRM Application
+# Django CRM Application
   👋 Hello! This is a fully-featured CRM (Customer Relationship Management) application built with Django. With this application, you can manage your customer data, including customer details and interactions.
 
 Features
 👉 Here are the features of this CRM application:
 
-Used PostgreSQL database
-User authentication and authorization
-Create, Read, Update, and Delete (CRUD) operations on customer data
-Simple and intuitive interface
-Add new customers and view their details
-Edit the details of a customer
-Delete a customer from the database
-Search for customers by name or email
-Responsive design that works on all devices
-Installation
+1. Used PostgreSQL database
+2. User authentication and authorization
+3. Create, Read, Update, and Delete (CRUD) operations on customer data
+4. Simple and intuitive interface
+5. Add new customers and view their details
+6. Edit the details of a customer
+7. Delete a customer from the database
+8. Search for customers by name or email
+9. Responsive design that works on all devices
+
+## Installation
 💻 To install this application, follow these steps:
 
 1. Clone the repository:
 
-  ```git clone https://github.com/mirshoddev99/django-crm.git```
+`git clone https://github.com/mirshoddev99/django-crm.git`
   
 2. Navigate to the project directory:
+  
   ```cd django-crm```
 
 3. Create a virtual environment:
+  
   ```python3 -m venv venv```
 
 4. Activate the virtual environment:
+  
   ```source venv/Scripts/activate```
 
 5. Install the dependencies:
+  
   ```pip install -r requirements.txt```
 
 6. Run the migrations:
+  
   ```python manage.py migrate```
 
 7. Start the development server:
+  
   ```python manage.py runserver```
   
 8. Open your browser and go to http://localhost:8000/ to access the application.
 
-# Usage
+## Usage
 👨‍💼 Once you have installed the application, you can start using it to manage your customers. Here are some of the things you can do with this application:
 
   Add a new customer by clicking on the "Add Customer" button and filling in the form.
